@@ -25,25 +25,21 @@ namespace Auto
                 MessageBox.Show("Nem töltötte ki a rendszám mezőt!", "Hiányzó adat", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 textBox1_rendszam.Focus();
             }
-
             else if (String.IsNullOrEmpty(comboBox1_gepjarmuTipusa.Text))
             {
                 MessageBox.Show("Nem választotta ki a gépjármű típusát!", "Hiányzó adat", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 comboBox1_gepjarmuTipusa.Focus();
             }
-
             else if (String.IsNullOrEmpty(textBox2_gyartasiIdo.Text))
             {
                 MessageBox.Show("Nem töltötte ki a gyártási idő mezőt!", "Hiányzó adat", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 textBox2_gyartasiIdo.Focus();
             }
-
             else if (String.IsNullOrEmpty(textBox3_teljesitmeny.Text))
             {
                 MessageBox.Show("Nem töltötte ki a teljesítmény mezőt!", "Hiányzó adat", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 textBox3_teljesitmeny.Focus();
             }
-
             else
             {
                 Gepjarmu gepjarmu = new Gepjarmu();
